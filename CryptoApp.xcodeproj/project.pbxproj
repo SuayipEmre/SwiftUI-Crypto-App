@@ -13,6 +13,7 @@
 		F27215DE2BA0C8E200BFC4CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27215DD2BA0C8E200BFC4CA /* Preview Assets.xcassets */; };
 		F27215E02BA0C8E200BFC4CA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27215DF2BA0C8E200BFC4CA /* Persistence.swift */; };
 		F27215E32BA0C8E200BFC4CA /* CryptoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F27215E12BA0C8E200BFC4CA /* CryptoApp.xcdatamodeld */; };
+		F27215EB2BA0CA4900BFC4CA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27215EA2BA0CA4900BFC4CA /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F27215DD2BA0C8E200BFC4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F27215DF2BA0C8E200BFC4CA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F27215E22BA0C8E200BFC4CA /* CryptoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptoApp.xcdatamodel; sourceTree = "<group>"; };
+		F27215EA2BA0CA4900BFC4CA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		F27215D52BA0C8E100BFC4CA /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				F27215E92BA0CA3B00BFC4CA /* Extensions */,
 				F27215D62BA0C8E100BFC4CA /* CryptoAppApp.swift */,
 				F27215D82BA0C8E100BFC4CA /* ContentView.swift */,
 				F27215DA2BA0C8E200BFC4CA /* Assets.xcassets */,
@@ -71,6 +74,14 @@
 				F27215DD2BA0C8E200BFC4CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F27215E92BA0CA3B00BFC4CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F27215EA2BA0CA4900BFC4CA /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 				F27215E32BA0C8E200BFC4CA /* CryptoApp.xcdatamodeld in Sources */,
 				F27215E02BA0C8E200BFC4CA /* Persistence.swift in Sources */,
 				F27215D92BA0C8E100BFC4CA /* ContentView.swift in Sources */,
+				F27215EB2BA0CA4900BFC4CA /* Color.swift in Sources */,
 				F27215D72BA0C8E100BFC4CA /* CryptoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
