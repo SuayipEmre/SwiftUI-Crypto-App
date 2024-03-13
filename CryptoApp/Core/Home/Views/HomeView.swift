@@ -35,13 +35,6 @@ struct HomeView: View {
     }
 }
 
-#Preview {
-    NavigationStack{
-        HomeView()
-            .navigationBarHidden(true)
-            .environmentObject(DeveloperPreview.instance.homeVM)
-    }
-}
 
 
 extension HomeView{
@@ -107,5 +100,14 @@ extension HomeView{
         .font(.caption)
         .foregroundStyle(Color.theme.secondaryText)
         .padding(.horizontal)
+    }
+}
+
+
+#Preview {
+    NavigationStack{
+        HomeView()
+            .navigationBarHidden(true)
+            .environmentObject(DeveloperPreview.instance.homeVM)
     }
 }

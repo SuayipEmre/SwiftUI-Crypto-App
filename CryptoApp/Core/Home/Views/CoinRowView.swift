@@ -68,7 +68,7 @@ extension CoinRowView{
                 .foregroundStyle(
                     (coin.priceChange24H ?? 0) >= 0  ?
                     Color.theme.green :
-                    Color.theme.green
+                    Color.theme.red
                 )
             
             
