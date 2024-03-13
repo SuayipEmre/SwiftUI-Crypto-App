@@ -29,12 +29,12 @@ class CoinImageService{
             image = savedImage
            
         } else{
-            downloardCoinImage()
+            downloadCoinImage()
          
         }
     }
     
-    func downloardCoinImage(){
+    func downloadCoinImage(){
         
         guard let url = URL(string: coin.image) else {return}
         
