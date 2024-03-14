@@ -9,8 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var viewModel : HomeViewModel
-    
+   
     @State private var showPortfolio : Bool = false
+    
+    
     var body: some View {
         ZStack{
             Color.theme.bg
@@ -18,13 +20,14 @@ struct HomeView: View {
             
             VStack{
                 homeHeader
+                HomeStatsView(showPortfolio: $showPortfolio)
                 SearchBarView(searchValue: $viewModel.searchText)
                 columnTitles
                 
                 if viewModel.searchText.count > 0, viewModel.allCoins.count == 0 {
                     Text("No result for \(viewModel.searchText)")
                         .foregroundStyle(Color.theme.red)
-                        .padding(.vertical, 10)
+                        .padding(.vertical, 8)
                 }
                
                 if !showPortfolio{

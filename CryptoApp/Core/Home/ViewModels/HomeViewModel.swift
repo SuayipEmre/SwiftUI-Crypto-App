@@ -11,6 +11,13 @@ import Combine
 
 class HomeViewModel : ObservableObject{
     
+    @Published var stats : [StatisticModel] = [
+        StatisticModel(title: "title", value: "value", percantageChange: 1),
+        StatisticModel(title: "title", value: "value"),
+        StatisticModel(title: "title", value: "value", percantageChange: 1),
+        StatisticModel(title: "title", value: "value", percantageChange: -1)
+    ]
+    
     @Published var allCoins : [CoinModel] = []
     @Published var portfolioCoins : [CoinModel] = []
     @Published var searchText : String = ""
@@ -18,7 +25,7 @@ class HomeViewModel : ObservableObject{
     private let dataService = CoinDataService()
     
     init() {
-       addSubsribers()
+        addSubsribers()
     }
     
     
@@ -35,7 +42,7 @@ class HomeViewModel : ObservableObject{
             .store(in: &cancellables)
         
         
-    
+        
     }
     
     private func filterCoins(text : String, coins : [CoinModel]) -> [CoinModel]{
