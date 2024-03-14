@@ -34,7 +34,7 @@ extension Double {
         let number = NSNumber(value: self)
         return currencyFormatter2.string(from: number) ?? "$0.00"
     }
-
+    
     
     /// Converts a Double into a Currency with 2-6 decimal places
     /// ```
@@ -95,7 +95,7 @@ extension Double {
     func formattedWithAbbreviations() -> String {
         let num = abs(Double(self))
         let sign = (self < 0) ? "-" : ""
-
+        
         switch num {
         case 1_000_000_000_000...:
             let formatted = num / 1_000_000_000_000
@@ -115,11 +115,11 @@ extension Double {
             return "\(sign)\(stringFormatted)K"
         case 0...:
             return self.asNumberString()
-
+            
         default:
             return "\(sign)\(self)"
         }
     }
-
+    
     
 }
