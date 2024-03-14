@@ -20,6 +20,12 @@ struct HomeView: View {
                 homeHeader
                 SearchBarView(searchValue: $viewModel.searchText)
                 columnTitles
+                
+                if viewModel.searchText.count > 0, viewModel.allCoins.count == 0 {
+                    Text("No result for \(viewModel.searchText)")
+                        .foregroundStyle(Color.theme.red)
+                        .padding(.vertical, 10)
+                }
                
                 if !showPortfolio{
                     allCoinsList
