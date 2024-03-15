@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct CryptoAppApp: App {
-    let persistenceController = PersistenceController.shared
+  
     @StateObject private var viewModel = HomeViewModel()
     
     init() {
