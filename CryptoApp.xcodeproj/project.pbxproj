@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F239B7D22BA4BCE500CE76C4 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239B7D12BA4BCE500CE76C4 /* PortfolioView.swift */; };
+		F239B7D42BA4C06900CE76C4 /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239B7D32BA4C06900CE76C4 /* XmarkButton.swift */; };
+		F239B7D62BA4C8EE00CE76C4 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239B7D52BA4C8EE00CE76C4 /* CoinLogoView.swift */; };
 		F27215D72BA0C8E100BFC4CA /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27215D62BA0C8E100BFC4CA /* CryptoAppApp.swift */; };
 		F27215DB2BA0C8E200BFC4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27215DA2BA0C8E200BFC4CA /* Assets.xcassets */; };
 		F27215DE2BA0C8E200BFC4CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27215DD2BA0C8E200BFC4CA /* Preview Assets.xcassets */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F239B7D12BA4BCE500CE76C4 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		F239B7D32BA4C06900CE76C4 /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
+		F239B7D52BA4C8EE00CE76C4 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 		F27215D32BA0C8E100BFC4CA /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27215D62BA0C8E100BFC4CA /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		F27215DA2BA0C8E200BFC4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +168,7 @@
 				F27215F12BA0D00300BFC4CA /* HomeView.swift */,
 				F2EB92FF2BA3A358007E59EB /* HomeStatsView.swift */,
 				F27215FC2BA0E9AE00BFC4CA /* CoinRowView.swift */,
+				F239B7D12BA4BCE500CE76C4 /* PortfolioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				F2EB92F52BA26EBC007E59EB /* SearchBar */,
 				F2EB92EA2BA256B8007E59EB /* CoinImage */,
 				F27215F42BA0D12900BFC4CA /* CircleButton */,
+				F239B7D32BA4C06900CE76C4 /* XmarkButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				F2EB92EB2BA256CD007E59EB /* CoinImageView.swift */,
+				F239B7D52BA4C8EE00CE76C4 /* CoinLogoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,6 +357,7 @@
 				F27215FD2BA0E9AE00BFC4CA /* CoinRowView.swift in Sources */,
 				F27215F62BA0D13C00BFC4CA /* CircleButtonView.swift in Sources */,
 				F2EB93042BA3B03F007E59EB /* MarketDataService.swift in Sources */,
+				F239B7D62BA4C8EE00CE76C4 /* CoinLogoView.swift in Sources */,
 				F27215F82BA0D65500BFC4CA /* CircleButtonAnimationView.swift in Sources */,
 				F27216092BA1061100BFC4CA /* CoinDataService.swift in Sources */,
 				F2EB93022BA3ACB6007E59EB /* MarketDataModel.swift in Sources */,
@@ -363,10 +373,12 @@
 				F2EB92F72BA26ECB007E59EB /* SearchBarView.swift in Sources */,
 				F27215FB2BA0DB8600BFC4CA /* CoinModel.swift in Sources */,
 				F2EB92EC2BA256CD007E59EB /* CoinImageView.swift in Sources */,
+				F239B7D42BA4C06900CE76C4 /* XmarkButton.swift in Sources */,
 				F27216012BA0F01200BFC4CA /* Double.swift in Sources */,
 				F27215D72BA0C8E100BFC4CA /* CryptoAppApp.swift in Sources */,
 				F2EB92EE2BA2581A007E59EB /* CoinImageService.swift in Sources */,
 				F2EB92E92BA24C54007E59EB /* NetworkingManager.swift in Sources */,
+				F239B7D22BA4BCE500CE76C4 /* PortfolioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
