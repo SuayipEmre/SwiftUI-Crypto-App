@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21C953C2BA6373E0046BDAB /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C953B2BA6373E0046BDAB /* HapticManager.swift */; };
 		F239B7D22BA4BCE500CE76C4 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239B7D12BA4BCE500CE76C4 /* PortfolioView.swift */; };
 		F239B7D42BA4C06900CE76C4 /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239B7D32BA4C06900CE76C4 /* XmarkButton.swift */; };
 		F239B7D62BA4C8EE00CE76C4 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239B7D52BA4C8EE00CE76C4 /* CoinLogoView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21C953B2BA6373E0046BDAB /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		F239B7D12BA4BCE500CE76C4 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		F239B7D32BA4C06900CE76C4 /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
 		F239B7D52BA4C8EE00CE76C4 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 			children = (
 				F2EB92E82BA24C54007E59EB /* NetworkingManager.swift */,
 				F2EB92F32BA26418007E59EB /* LocalFileManager.swift */,
+				F21C953B2BA6373E0046BDAB /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				F2C1C9E82BA4F41E00058975 /* PortfolioContainer.xcdatamodeld in Sources */,
 				F239B7D42BA4C06900CE76C4 /* XmarkButton.swift in Sources */,
 				F27216012BA0F01200BFC4CA /* Double.swift in Sources */,
+				F21C953C2BA6373E0046BDAB /* HapticManager.swift in Sources */,
 				F27215D72BA0C8E100BFC4CA /* CryptoAppApp.swift in Sources */,
 				F2EB92EE2BA2581A007E59EB /* CoinImageService.swift in Sources */,
 				F2EB92E92BA24C54007E59EB /* NetworkingManager.swift in Sources */,
