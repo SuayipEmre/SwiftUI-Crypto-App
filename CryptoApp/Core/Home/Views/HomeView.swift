@@ -12,9 +12,12 @@ struct HomeView: View {
     
     //animate right
     @State private var showPortfolio : Bool = false
-    
     //new sheet
     @State private var showPortfolioView = false
+    
+    
+    @State private var selectedCoin : CoinModel? = nil
+    @State private var showDetailView : Bool = false
     
     var body: some View {
         ZStack{
@@ -48,12 +51,19 @@ struct HomeView: View {
                 Spacer(minLength: 0)
             }
         }
+        .background(
+            NavigationLink(value: true, label: {
+               EmptyView()
+            })
+            .navigationDestination(isPresented: $showDetailView) {DetailLoadingView(coin: $selectedCoin)}
+        )
     }
 }
 
 
 
 extension HomeView{
+    
     private var homeHeader : some View{
         HStack{
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
@@ -89,6 +99,9 @@ extension HomeView{
             ForEach(viewModel.allCoins){ coin in
                 CoinRowView(coin: coin, showHoldingsColumn: false)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
                 
             }
         }
@@ -96,16 +109,27 @@ extension HomeView{
         .listStyle(PlainListStyle())
     }
     
+   
+    
     private var portfolioCoinsList : some View{
         List{
             ForEach(viewModel.portfolioCoins){ coin in
                 CoinRowView(coin: coin, showHoldingsColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
                 
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
             }
         }
         .listStyle(PlainListStyle())
     }
+    
+    private func segue(coin : CoinModel){
+        selectedCoin = coin
+        showDetailView.toggle()
+    }
+    
     
     private var columnTitles : some View{
         HStack{
